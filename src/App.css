@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.userItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  border: 1px solid grey;
+  padding: 10px 10px;
+}
+
+.userList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 5px 20px;
+  border: none;
+}
+
+.input_perent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+form p {
+  margin: 0;
+}
+
+input {
+  padding: 5px 10px;
+  outline: none;
+}
