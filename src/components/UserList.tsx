@@ -6,17 +6,31 @@ const UserList = () => {
 	if (!context) {
 		throw new Error('Context not found')
 	}
-	const { users,removeUser } = context
+	const { users, removeUser } = context
 
 	return (
-		<div className='userList'>
+		<div className="userList">
+			<h3>Userlist</h3>
 			{users.map((user) => {
 				return (
-					<div className='userItem' key={user.id}>
-						<p>Name: {user.name}</p>
-						<p>surname: {user.surname}</p>
-						<p>age: {user.age}</p>
-                        <button onClick={() => removeUser(user.id)}>x</button>
+					<div className="userItem" key={user.id}>
+						<div className="userItemGlob">
+							<div className="leftSide">
+								<p className="userChild name">
+									<strong>Name:</strong>
+									{user.name} /
+								</p>
+								<p className="userChild surname">
+									<strong>Surname:</strong> {user.surname} /
+								</p>
+								<p className="userChild age">
+									<strong>Age:</strong> {user.age} /
+								</p>
+							</div>
+							<div>
+								<button onClick={() => removeUser(user.id)}>x</button>
+							</div>
+						</div>
 					</div>
 				)
 			})}

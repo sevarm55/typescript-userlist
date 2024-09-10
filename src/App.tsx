@@ -29,20 +29,20 @@ function App() {
   }
 
 	return (
-		<>
+		<div className='App'>
 			<UserContext.Provider
 				value={{
 					users,
-          handleAddUser,
-          newUser,
-          setNewUser,
-          removeUser
+					handleAddUser,
+					newUser,
+					setNewUser,
+					removeUser
 				}}
 			>
 				<AddUser />
 				<UserList />
 			</UserContext.Provider>
-		</>
+		</div>
 	)
 }
 
